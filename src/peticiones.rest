@@ -1,0 +1,40 @@
+@host=http://localhost:3000/api 
+
+
+###
+GET {{host}}/experiencia
+
+###
+POST {{host}}/experiencia
+Content-Type: application/json
+
+{
+    "puesto": "Dirección y atención al cliente",
+    "empresa": "MOMO SPORTS Club",
+    "descripcion":"Tras mi formación universitaria empiezo mi carrera laboral en diferentes instalaciones deportivas desde puestos de atención al cliente hasta la dirección de varios centros deportivos.",
+    "fecha": "2013 - 2019"
+}
+
+###
+GET {{host}}/formacion
+
+###
+POST {{host}}/formacion
+Content-Type: application/json
+
+{
+    "estudios": "Licenciatura en Ciencias de la Actividad Física y el Deporte",
+    "entidad": "Universidad de Alcalá",
+    "descripcion": "",
+    "fecha": "2012"
+  }
+
+###
+POST {{host}}/mailing
+Content-Type: application/json
+
+{
+    "nombre":"dani",
+    "email": "sanguinad@gmail.com",
+    "mensaje":"jean francooooooooooooo paquete"
+}
