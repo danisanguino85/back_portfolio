@@ -14,8 +14,8 @@ const sendMail = async (req, res) => {
 
   const mailOptions = {
     from: "sanguinad@gmail.com",
-    to: email,
-    subject: `Mensaje del portfolio`,
+    to: "sanguinad@gmail.com",
+    subject: `Mensaje de ${email}`,
     name: nombre,
     text: mensaje,
   };
