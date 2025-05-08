@@ -27,7 +27,16 @@ Content-Type: application/json
     "entidad": "Universidad de Alcalá",
     "descripcion": "",
     "fecha": "2012"
-  }
+}
+
+###
+
+GET {{host}}/formacion/68139125b1b74967f51a5a20
+
+
+
+
+
 
 ###
 POST {{host}}/mailing

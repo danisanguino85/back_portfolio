@@ -8,6 +8,16 @@ const getAll = async (req, res, next) => {
     next(error);
   }
 };
+const getById = async (req, res, next) => {
+  const { formacionId } = req.params;
+  try {
+    const formacion = await Formacion.findById(formacionId);
+
+    res.json(formacion);
+  } catch (error) {
+    next(error);
+  }
+};
 
 const create = async (req, res, next) => {
   try {
@@ -21,4 +31,5 @@ const create = async (req, res, next) => {
 module.exports = {
   getAll,
   create,
+  getById,
 };
