@@ -22,6 +22,11 @@ app.use((req, res, next) => {
   });
 });
 
+//uptimeRobot
+app.get("/healthcheck", (req, res) => {
+  res.status(200).send("OK");
+});
+
 // Error handler
 app.use((err, req, res, next) => {
   console.error(err.stack);
